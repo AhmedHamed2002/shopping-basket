@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>shopping basket</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1>SHOP</h1>
+            <div class="count">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cnt">0</span>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="root">
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="image/laptop.png" alt="laptop">
+                    </div>    
+                    <div class="text">
+                        <h1>ASUS FHD Gaming Laptop</h1>
+                        <p>$ <span>500.00</span></p>
+                        <button  onclick="add(500 ,1)" >add to cart </button>
+                    </div>  
+                </div>
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="image/keyboard.png" alt="Keyboard">
+                    </div>  
+                    <div class="text">
+                    <h1>AK-900 Wired Keyboard</h1>
+                    <p>$<span>80.00</span></p>
+                    <button onclick="add(80 , 2)"  >add to cart </button>
+                    </div>
+                </div>
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="image/cam.png" alt="Camera">
+                    </div> 
+                    <div class="text">
+                    <h1>CANON DSLR Camera</h1>
+                    <p>$<span>220.00</span></p>
+                    <button   onclick="add(220 , 3)" >add to cart </button>
+                    </div>
+                </div>
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="image/monitor.png" alt="Monitor">
+                    </div> 
+                    <div class="text">
+                    <h1>IPS LCD Gaming Monitor</h1>
+                    <p>$<span>200.00</span></p>
+                    <button  onclick="add(200 , 4)" >add to cart </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-sidebar">
+                <h1  class="basket">Shop Cart </h1>
+                <div class="action" id ="action">Your Cart Is Empty</div>
+                <hr>
+                <div class="total">
+                    <h2>Total</h2>
+                    <p > $ <span id="TotalNumber">0.00</span></p>
+                </div>
+                <hr>
+                <button class="btn">Buy</button>
+            </div>
+    
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
